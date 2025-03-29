@@ -1,0 +1,132 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main layout structure */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+/* Fixed header styling */
+header {
+  z-index: 2; /* Ensure header stays above other content */
+  width: 100%;
+  max-width: 475px; /* Match Instagram's mobile width */
+  padding: 10px 15px;
+  border-bottom: 1px solid #c6c6c6;
+  position: fixed; /* Keep header at top while scrolling */
+  top: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* User avatar styling */
+.user-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%; /* Creates circular avatar */
+  margin-left: auto;
+}
+
+/* Logo styling */
+.logo {
+  width: 127px;
+  height: auto;
+}
+
+/* Main content section */
+.mainSection {
+  width: 100%;
+  max-width: 475px; /* Match header width */
+  margin-top: 100px; /* Offset for fixed header */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between posts */
+  padding: 0;
+}
+
+/* Post container layout */
+.container {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Post user info styling */
+.posterInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+/* Post avatar image */
+.poster-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular avatar */
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+/* Username styling */
+.posterName {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+/* Location text styling */
+.posterLocation {
+  font-size: 16px;
+  color: #666; /* Instagram-style gray */
+  margin: 0;
+}
+
+/* Main post image container */
+.post {
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Action buttons container */
+.iconFrame {
+  padding-left: 5px;
+  width: 390px;
+  height: 40px;
+  display: block;
+  margin-bottom: 0;
+}
+
+/* Individual action icons */
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+/* Icon hover effects */
+.icon:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(24%) sepia(91%) saturate(5911%)
+    hue-rotate(1deg) brightness(92%); /* Instagram-style red on hover */
+}
+
+/* Likes section layout */
+.likeSection {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
